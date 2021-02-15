@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.suggestions {
+  border-top: 2px solid #999
+}
+
+.suggestions > div {
+  padding: 15px;
+  font-size: 20px;
+  color: #fff;
+  border-top: 1px solid #666;
+  cursor: pointer;
+}
+
+.suggestions > div:hover {
+  background-color: #42bd45;
+}
+
+.sploptions{
+  z-index:10000000;
+}
+
+#navbtn {
+  text-decoration: none;
+  color: black;
+}
+#navbtn:hover {
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  align-items: center;
+  font-family: inter;
+  background-color: #ededed;
+}
+
+.app__logoImg {
+  width: 140px;
+  margin-left: 1px;
+}
+
+nav .nav-links {
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+nav .nav-links a {
+  font-size: 1.1vw;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+nav .nav-links a:hover {
+  transition: all 0.3s;
+  color: white;
+  padding: 10px;
+  background-color: #42bd45;
+  border-radius: 5px;
+}
+
+nav .burger {
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+  nav .burger {
+    display: block;
+  }
+
+  nav .nav-links {
+    z-index: 10;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100vh;
+
+    background: #ededed;
+    padding: 40px;
+    width: 50%;
+    transform: translateX(-500px);
+    transition: 0.5s ease-in-out;
+  }
+
+  nav .nav-links a {
+    font-size: 18px;
+  }
+  nav .nav-links li {
+    padding: 25px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  nav .nav-links li:last-of-type {
+    border-bottom: 0px solid #ccc;
+  }
+  nav .nav-links a:hover {
+    border-bottom: 0px solid #fff;
+  }
+}
+
+.searchBar {
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px;
+  background: grey;
+  transition: 0.5s;
+  
+}
+
+.searchBar:focus-within > .searchtxt {
+  width: 200px;
+  padding: 0 10px;
+  color: white;
+}
+
+.searchBar:hover > .searchtxt {
+  width: 200px;
+  padding: 0 10px;
+  color: white;
+}
+
+.searchBar:hover > .searchButton {
+  background: white;
+  margin-right: 0.7px;
+
+}
+.searchButton {
+  margin-top: 0.1%;
+  color: #42bd45;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.searchButton i {
+  padding-top: 0px;
+  padding-left: 0px;
+}
+.searchtxt {
+  font-family: "Rubik", sans-serif;
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #ededed;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 30px;
+  width: 0px;
+}
+::placeholder {
+  color: #ededed;
+  opacity: 0.5;
+  font-family: "Rubik", sans-serif;
+}
+
+.signinbtn {
+  color: black;
+  text-decoration: none;
+}
+
+.searchimg{
+  box-shadow: -10px -10px 15px #edeff1,7px 10px 20px 20px #cacfd8;
+}
+
+.drop{
+  width:70%;
+  margin-left: 0px;
+  margin-top: 30px;
+  
+}
+
+.body__finddoctor{
+  min-height:100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;}
+
+.docresults{
+  width:100%;
+}
+
+.cont1,.cont2,.cont3,.cont4{width:100%;
+  padding-left: 10px;
+  background:#ededed;
+  align-items: center;
+  font-family: "Rubik",sans-serif;
+  
+}
+.findDoctor__left{flex:0.7;
+  width:100%;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.findDoctor__left>h1{
+  margin-top:-50%;
+}
+
+.findDoctor__right {
+  flex:0.5;
+  width:100%;
+  display: flex;
+  background-color: #ededed;
+  height: 90vh;
+  
+}
+.cont1> h1{margin-top: 20px;
+  font-size: 1.9vw;
+  }
+
+.cont1> h2{
+  font-size: 1.5vw; 
+}
+
+.contlink4{
+  color:black;
+  padding-bottom:10px;
+}
+
+
+
+
+

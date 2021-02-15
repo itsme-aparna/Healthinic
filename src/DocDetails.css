@@ -1,0 +1,17 @@
+.drop {
+  height: 3rem;
+  width: 18vw;
+  margin-top: -20%;
+}
+.drop {
+  padding: 0px;
+
+  padding-right: 100px;
+}
+.drop:focus-within {
+  outline: #42bd45;
+}
+
+.drop:hover {
+  box-shadow: #42bd45;
+}

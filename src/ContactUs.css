@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 100px;
+}
+.container1:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 110vh;
+  background: url("https://img.techpowerup.org/201111/undraw-message-sent-1030.png")
+    no-repeat center;
+  background-size: cover;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+.content-box {
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+.left {
+  height: 100%;
+  background: url("https://img.techpowerup.org/201111/undraw-message-sent-1030-removebg-preview.png")
+    no-repeat center;
+  background-size: cover;
+  height: 30vh;
+  width: 60vh;
+  margin-left: 24%;
+}
+.right {
+  padding: 25px 40px;
+}
+
+.contitle {
+  font-family: "Rubik", sans-serif;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 2vw;
+  margin-left: 37%;
+}
+
+.contitle:after {
+  content: "";
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 190px;
+  border-radius: 5px;
+  background-color: gray;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: black;
+  color: white;
+  font-size: 0.8vw;
+  margin-bottom: 22px;
+  transition: -3s;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+}
+
+.ContactUs__button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  text-decoration: none;
+  font-size: 1.3vw;
+  overflow: hidden;
+  transition: 0.2s;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  margin-left: 40%;
+  background: gray;
+  
+}
+
+.ContactUs__button:hover {
+  color: white;
+  background: #42bd45;
+  transition-delay: 1s;
+
+  box-shadow: 0 0 10px #42bd45, 0 0 40px #42bd45, 0 0 10px #42bd45;
+}
+.ContactUs__button span {
+  position: absolute;
+  display: block;
+  
+}
+
+.ContactUs__button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, #42bd45);
+}
+
+.ContactUs__button:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+}
+
+.ContactUs__button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(270deg, transparent, #42bd45);
+}
+
+.ContactUs__button:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.ContactUs__button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #42bd45);
+}
+
+.ContactUs__button:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.ContactUs__button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #42bd45);
+}
+
+.ContactUs__button:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}

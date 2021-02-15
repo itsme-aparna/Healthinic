@@ -1,0 +1,282 @@
+.drop1,
+.drop2,
+.drop3,
+.drop4,
+.drop5,
+.drop6 {
+  padding: 10px;
+}
+
+.app__svg1 {
+  position: relative;
+}
+
+.dropdown1 {
+  margin-left: 18%;
+}
+
+.drop1:focus-within {
+  outline: #42bd45;
+}
+
+.drop1:hover {
+  box-shadow:#42bd45;
+
+}
+
+.dropdown2 {
+  margin-left: 2%;
+}
+.dropdown1,
+.dropdown2 {
+  transition: ease all 0.5s;
+  display: inline-block;
+  width: 20%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.eval {
+  position: absolute;
+
+  transform: translate(-50%, -50%);
+  font-size: 4.5vw;
+  top: 19%;
+  margin-left: 0%;
+  font-family: "Rubik", sans-serif;
+  transition: ease all 0.5s;
+}
+
+.eval:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #ededed;
+}
+.eval:nth-child(2) {
+  color: #ededed;
+  animation: animate22 4s ease-in-out infinite;
+}
+
+@keyframes animate22 {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      15% 44%,
+      32% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      16% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.eval__graphics {
+  width: 200px;
+  margin-left: 1%;
+}
+
+.text {
+  display: inline;
+  font-size: 10px;
+}
+
+.text {
+  position: absolute;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8vw;
+  margin-left: 39%;
+  margin-top: -6%;
+}
+
+.evalbutton {
+  margin-left: 42%;
+  margin-right: 80%;
+  margin-top: 3%;
+  transition: ease all 0.5s;
+}
+
+.linkbutton {
+  background: rgba(255, 255, 255, 0.1);
+  width: 50%;
+  /*position: relative;*/
+  padding: 15px;
+
+  padding-right: 10px;
+  margin-right: 2%;
+  text-decoration: none;
+  color: green;
+  font-size: 1vw;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 0.5vw;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 2px 30px #42bd45;
+  transition: ease all 0.5s;
+}
+
+.linkbutton:hover {
+  box-shadow: 0px 5px 10px #ededed;
+}
+
+.eval__graphics1 {
+  position: absolute;
+  margin-left: 65%;
+  top: 11.5%;
+  margin-right: 0%;
+  padding-right: 0%;
+}
+.illust1 {
+  transition: ease all 0.5s;
+  width: 98%;
+
+  margin-top: 1%;
+}
+/*
+@media all and (max-width: 1400px) {
+  .illust1 {
+    padding-right: 5%;
+    padding-top: 1%;
+    
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .illust1 {
+    padding-right: 10%;
+    padding-top: 1%;
+  }
+}
+
+@media all and (max-width: 1200px) {
+    .illust1 {
+      padding-right: 15%;
+      padding-top: 1%;
+    }
+  }
+@media all and (max-width: 1100px) {
+  .illust1 {
+    padding-right: 23%;
+    padding-top: 1%;
+  }
+  .eval{
+      top:18%;
+  }
+}
+@media all and (max-width: 1000px) {
+  .illust1 {
+    padding-right: 32%;
+    padding-top: 1%;
+  }
+}
+@media all and (max-width: 900px) {
+  .illust1 {
+    padding-right: 42%;
+    padding-top: 2%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .illust1 {
+    padding-right: 50%;
+    padding-top: 1%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .illust1 {
+    padding-right: 56%;
+    padding-top: 1%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .illust1 {
+    padding-right: 63%;
+    padding-top: 1%;
+  }
+}*/
+
+@media all and (max-width: 1400px) {
+  .eval {
+    top: 18%;
+  }
+}
+
+@media all and (max-width: 1300px) {
+}
+
+@media all and (max-width: 1200px) {
+  .eval {
+    top: 18%;
+  }
+}
+@media all and (max-width: 1100px) {
+  .eval {
+    top: 17%;
+  }
+  .dropdown1 {
+    margin-left: 15%;
+  }
+}
+@media all and (max-width: 1000px) {
+  .eval {
+    top: 16%;
+  }
+}
+@media all and (max-width: 900px) {
+  .dropdown1 {
+    margin-left: 13%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .dropdown1 {
+    margin-left: 12.8%;
+  }
+  .linkbutton {
+    padding-left: 30px;
+    padding-right: 25px;
+  }
+  .evalbutton {
+    margin-left: 40%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .eval {
+    top: 15%;
+  }
+  .dropdown1 {
+    margin-left: 10.8%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .eval {
+    top: 14%;
+  }
+  .dropdown1 {
+    margin-left: 8%;
+  }
+}
